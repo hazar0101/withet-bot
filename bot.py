@@ -1,6 +1,7 @@
 import json
 import asyncio
 import discord
+import os
 from discord.ext import commands
 
 client = commands.Bot(command_prefix="!")
@@ -342,4 +343,4 @@ async def liste(ctx):
   
  
 #YOU CAN USE os.environ TO HIDE YOUR BOT TOKEN: SAVE YOUR BOT TOKEN AS THE NAME YOU GAVE IN os.environ['name'] 
-bot.run(os.environ['BOT_TOKEN'])
+bot.run(os.environ['token'])
